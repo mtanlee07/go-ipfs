@@ -28,6 +28,14 @@ All commits in a PR must pass tests. If they don't, fix the commits and/or [squa
 
 We use CI tests which run when you push to your branch. To run the tests locally, you can run any of these: `make build`, `make install`, `make test`, `go test ./...`, depending on what youre looking to do. Generally `go test ./...` is your best bet.
 
+### Branch Names
+
+If you are working on a new feature, prefix your branch name with `feat/`. If you are fixing an issue, `fix/`. If you are simply adding tests, `test/`. If you are adding documentation, `docs/`.
+
+After that, try to signal what part of the codebase this branch is working on. For example, if you are adding a new test to the dht that tests for nil providers being returned, then `test/dht/nil-provs` would be acceptable.
+
+Please also try to keep branch names around or under 20 characters. It keeps things a little cleaner overall.
+
 ### Commit messages
 
 Commit messages must start with a short subject line, followed by an optional, 
